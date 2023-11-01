@@ -1,5 +1,19 @@
 title: Pages
-structure:
-  root: true
+sites:
+  - default
+  - de
+propagate: false
+template: default
+layout: layout
+revisions: false
 route: '{parent_uri}/{slug}'
-propagate: true
+date: true
+sort_dir: asc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: false
+  max_depth: 1
